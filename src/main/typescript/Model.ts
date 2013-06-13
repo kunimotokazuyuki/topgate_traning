@@ -1,9 +1,8 @@
 ///<reference path='libs/DefinitelyTyped/angularjs/angular.d.ts' />
 
 /**
- * モデルのモジュール。
- */
-module Model {
+ * モデルのModuleです*/
+ module Model {
 	export class Sample {
 		test:string;
 
@@ -18,4 +17,15 @@ module Model {
 			this.test = data.test;
 		}
 	}
+			export class Todo{
+                 /*publicを入れると値を入れることが出来る
+                contentを定義dしてくれる。
+                * */
+				constructor(public content:string = "Unkown" ){}
+            }
+
 }
+
+
+
+
