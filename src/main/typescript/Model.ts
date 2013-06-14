@@ -1,5 +1,8 @@
 ///<reference path='libs/DefinitelyTyped/angularjs/angular.d.ts' />
 
+///<reference path='libs/DefinitelyTyped/angularjs/TodoServiceModel.ts' />
+
+
 /**
  * モデルのModuleです*/
  module Model {
@@ -19,7 +22,7 @@
 	}
 			export class Todo{
                  /*publicを入れると値を入れることが出来る
-                contentを定義dしてくれる。
+                contentを定義してくれる。
                 * */
 				constructor(public content:string = "Unkown" ){}
             }
